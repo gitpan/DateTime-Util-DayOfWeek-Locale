@@ -1,0 +1,26 @@
+NAME
+    DateTime::Util::DayOfWeek::Locale - DateTime Localized Day of Week
+    Utilities
+
+SYNOPSIS
+        use DateTime;
+        use DateTime::Util::DayOfWeek::Locale 'fr';
+
+        my $dt = DateTime->today;
+        print "today is lundi" if $dt->is_lundi;
+
+DESCRIPTION
+    DateTime::Util::DayOfWeek::Locale is localized day of week utilities for
+    DateTime.
+
+    You can judgement the day of week in your native language ;-)
+
+AUTHOR
+    MATSUNO Tokuhiro <tokuhiro at mobilefactory.jp>
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+SEE ALSO
+    DateTime, DateTime::Util::DayOfWeek
+
