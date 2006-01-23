@@ -1,9 +1,8 @@
 package DateTime::Util::DayOfWeek::Locale;
 use strict;
 use warnings;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 use UNIVERSAL::require;
-use utf8;
 
 sub import {
     my $self   = shift;
@@ -16,8 +15,8 @@ sub import {
     no strict 'refs';
     my $i = 1;
     for my $dow (@{"DateTime::Locale::$locale"->day_names}) {
-        eval qq[ *{"DateTime::is_\L$dow"} = sub { shift->dow == $i }; ];
-        $i++;
+        my $x = $i++;
+        *{"DateTime::is_\L$dow"} = sub { shift->dow == $x };
     }
 }
 

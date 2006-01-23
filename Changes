@@ -1,4 +1,7 @@
 Revision history for Perl extension DateTime::Util::DayOfWeek::Locale
 
+0.02  Mon Jan 23 16:10:09 JST 2006
+        - don't use the 'eval'
+
 0.01  Sun Jan 22 22:10:47 2006
         - original version
