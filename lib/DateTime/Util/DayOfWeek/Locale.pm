@@ -1,7 +1,7 @@
 package DateTime::Util::DayOfWeek::Locale;
 use strict;
 use warnings;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use UNIVERSAL::require;
 
 sub import {
@@ -33,7 +33,7 @@ DateTime::Util::DayOfWeek::Locale - DateTime Localized Day of Week Utilities
     use DateTime::Util::DayOfWeek::Locale 'fr';
 
     my $dt = DateTime->today;
-    print "today is lundi" if $dt->is_lundi;
+    print "Aujourd'hui est dimanche" if $dt->is_dimanche;
 
 =head1 DESCRIPTION
 
@@ -47,6 +47,10 @@ MATSUNO Tokuhiro E<lt>tokuhiro at mobilefactory.jpE<gt>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
+
+=head1 THANKS TO
+
+Tatsuhiko Miyagawa, id:charsbar.
 
 =head1 SEE ALSO
 

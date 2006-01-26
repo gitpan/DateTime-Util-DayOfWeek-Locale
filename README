@@ -7,7 +7,7 @@ SYNOPSIS
         use DateTime::Util::DayOfWeek::Locale 'fr';
 
         my $dt = DateTime->today;
-        print "today is lundi" if $dt->is_lundi;
+        print "Aujourd'hui est dimanche" if $dt->is_dimanche;
 
 DESCRIPTION
     DateTime::Util::DayOfWeek::Locale is localized day of week utilities for
@@ -20,6 +20,9 @@ AUTHOR
 
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
+
+THANKS TO
+    Tatsuhiko Miyagawa, id:charsbar.
 
 SEE ALSO
     DateTime, DateTime::Util::DayOfWeek
