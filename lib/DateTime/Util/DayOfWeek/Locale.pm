@@ -1,14 +1,15 @@
 package DateTime::Util::DayOfWeek::Locale;
 use strict;
 use warnings;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 use UNIVERSAL::require;
+use Carp;
 
 sub import {
     my $self   = shift;
     my $locale = shift;
 
-    die "Usage : use DateTime::Util::DayOfWeek::Locale 'fr';" unless $locale;
+    croak "Usage : use DateTime::Util::DayOfWeek::Locale 'fr';" unless $locale;
 
     "DateTime::Locale::$locale"->use or die $@;
 
